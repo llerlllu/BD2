@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище PraktikaModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ID_FIO">
+    <Key>
+      <PropertyRef Name="ID_FIO" />
+    </Key>
+    <Property Name="ID_FIO" Type="int" Nullable="false" />
+    <Property Name="Imya" Type="nchar" MaxLength="50" />
+    <Property Name="Familiya" Type="nchar" MaxLength="50" />
+    <Property Name="Otchestvo" Type="nchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Хранилище PraktikaModelContainer">
+    <EntitySet Name="ID_FIO" EntityType="Self.ID_FIO" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

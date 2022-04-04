@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PraktikaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ID_FIO">
+    <Key>
+      <PropertyRef Name="ID_FIO1" />
+    </Key>
+    <Property Name="ID_FIO1" Type="Int32" Nullable="false" />
+    <Property Name="Imya" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Familiya" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Otchestvo" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PraktikaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ID_FIO" EntityType="Self.ID_FIO" />
+  </EntityContainer>
+</Schema>

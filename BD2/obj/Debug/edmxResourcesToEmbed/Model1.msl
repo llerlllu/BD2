@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PraktikaModelContainer" CdmEntityContainer="PraktikaEntities">
+    <EntitySetMapping Name="ID_FIO">
+      <EntityTypeMapping TypeName="PraktikaModel.ID_FIO">
+        <MappingFragment StoreEntitySet="ID_FIO">
+          <ScalarProperty Name="ID_FIO1" ColumnName="ID_FIO" />
+          <ScalarProperty Name="Imya" ColumnName="Imya" />
+          <ScalarProperty Name="Familiya" ColumnName="Familiya" />
+          <ScalarProperty Name="Otchestvo" ColumnName="Otchestvo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

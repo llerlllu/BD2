@@ -1,0 +1,17 @@
+﻿<Window x:Class="BD2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BD2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="550">
+    <Grid Background="#FF635757">
+
+        <PasswordBox x:Name="Par" MaxLength="30" Margin="10,182,10,0" VerticalAlignment="Top" Height="36" FontSize="18"/>
+        <Button Content="Авторизироваться" Margin="10,248,10,0" VerticalAlignment="Top" Height="38" FontSize="18" Foreground="White" Background="#FF312B2B" FontFamily="Yu Gothic UI Semibold" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="232" Foreground="#FFFFF9F9" FontSize="36" FontFamily="Yu Gothic UI Semibold"><Run Language="ru-ru" Text="Авторизация"/></TextBlock>
+        <TextBox x:Name="Log" MaxLength="16" Height="36" Margin="10,130,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="18" UndoLimit="30"/>
+
+    </Grid>
+</Window>
